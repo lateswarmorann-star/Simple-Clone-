@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.brand img {
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: 1000;
+}
+
+.container {
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 90%;
+    border-radius: 12px;
+    background-image: url('bgg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1db954;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bottom {
+    background-color: black;
+    align-items: center;
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    right: 0;
+    width: 100%;
+    gap: 12px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.bottom .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.bottom .icon i {
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.bottom .icon i:hover {
+    transform: scale(1.1);
+    color: #1db954;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.bottom .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.bottom .controls i {
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.bottom .controls i:hover {
+    transform: scale(1.1);
+    color: #1db954;
+}
+
+#myRange {
+    width: 320px;
+    max-width: 90%;
+    cursor: pointer;
+
+}
+
+.SongList {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.SongList img {
+    height: 50px;
+    width: 50px;
+    margin-left: 0;
+    object-fit: cover;
+    border-radius: 34px;
+}
+
+.SongList span {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.SongList i {
+    font-size: 1.2rem;
+}
+
+.songItem {
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songInfo {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.songDuration {
+    color: white;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.SongInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.songPlayBtn {
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.songPlayBtn:hover {
+    color: #1db954;
+    transform: scale(1.1);
+}
